@@ -1,6 +1,6 @@
-# Snails
+# sloth
 
-[在线文档](https://felix9ia.github.io/snails/), 在这里记录进步点滴
+[在线文档](http://felix9ia.gitee.io/sloth/), 在这里记录进步点滴
 
 
 ## TODO
