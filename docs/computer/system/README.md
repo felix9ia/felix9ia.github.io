@@ -12,6 +12,17 @@
 
 ![svg](https://en.wikipedia.org/wiki/Unix_filesystem#/media/File:Standard-unix-filesystem-hierarchy.svg)
 
+## 命令大全
+
+![](https://images2017.cnblogs.com/blog/798706/201709/798706-20170914122558125-1458864902.jpg)
+
+## Vim
+
+[Vim Vi 键盘图](https://blog.gomyck.com/posts/vimKeyboard/)
+
+[vim工具](https://www.shuzhiduo.com/A/LPdo8rpGz3/)
+![](https://bbsmax.ikafan.com/proxy/https/images2015.cnblogs.com/blog/689494/201604/689494-20160426231229127-1667718443.gif)
+
 ## SimpleKernel
 安装依赖
 
