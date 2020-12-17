@@ -7,6 +7,7 @@ module.exports = {
       { text: "技术", link: "/computer/" },
       { text: "阅读", link: "/reading/" },
       { text: "运动", link: "/health/" },
+      { text: "思考", link: "/opinions/" },
       { text: "博客", link: "https://felix9ia.github.io/#/blog" },
       { text: "Github", link: "https://github.com/felix9ia/sloth" },
     ],
