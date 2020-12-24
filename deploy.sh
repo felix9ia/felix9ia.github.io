@@ -18,6 +18,6 @@ git commit -m 'deploy'
 
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:felix9ia/sloth.git master:gh-pages
+git push -f https://gitee.com/felix9ia/sloth.git master:gh-pages
 
 cd -
