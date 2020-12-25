@@ -18,40 +18,11 @@ TODO
 - 正交
 - 场景
 
-## 单元测试
-
-以 `Go` 语言为入门
-
-### Mock 使用
-
-适合使用 mock/stub 场景是
-
-- 数据库连接
-- 文件I/O
-
-### 注意事项
-
-- 尽量不对 `http` 和 `net`库使用 mock，这样可以覆盖较为真实的场景
-
-## 实践参考
-
-参考 [dubbo-go](https://github.com/apache/dubbo-go) 的单元测试写法
-
 ## 相应工具
 
 ## 测试流程
 
-## 避雷专区
 
-使用 `sqlmock` 时，遇到的问题。
-
-- 因为在调用过程中，会发生调用栈的问题
-
-```
-call to Query 'SQL' with args, was not expected, next expectation is: ExpectedBegin => expecting database transaction Begin
-```
-
-## 最终效果
 
 
 ## 参考
