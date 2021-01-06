@@ -4,9 +4,8 @@
 
 ## 参考
 
-[Golang 单元测试：有哪些误区和实践？](https://developer.aliyun.com/article/778487)
-
-[你懂SOLID原则吗？](https://mp.weixin.qq.com/s/JOVSkcC48qwoaByxUtgcFA)
+《软件测试的艺术》
+《软件测试-第二版》
 
 [coursera - 软件测试](https://www.coursera.org/learn/ruanjian-ceshi#syllabus)
 
@@ -51,7 +50,7 @@
 [一个高效测试用例设计的解决方案！](https://testerhome.com/topics/17554)
 
 这里可以参考公众号
--  [软件测试 BeTester](http://mp.weixin.qq.com/mp/homepage?__biz=MzI2NDk1NTU4Ng==&hid=5&sn=aae3645264e03d248f774b8e368d2081&scene=18#wechat_redirect)
+-  [软件测试 BeTester](https://zhuanlan.zhihu.com/p/75073232)
 -  [软件测试打怪升级](https://www.zhihu.com/column/c_1185258897522274304)
 
 
@@ -148,6 +147,11 @@ min-,min,min+,normal,max-,max,max+
 ### 正交设计
 
 多个因素的水平组合
+
+#### 验证
+
+- 正交验证
+- 配对验证
 
 #### 失效模式
 
@@ -322,19 +326,9 @@ min-,min,min+,normal,max-,max,max+
 
 
 
-## 验证
-
-- 正交验证
-- 配对验证
-
-## 失效模式
-
-- 单失效模式
-- 多失效模式
-
 ## Mock 使用
 
-数据需要隔离，所以使用 `sqlmock` 来实现，比如 [sqlmock-blog-demo](https://github.com/DATA-DOG/go-sqlmock/tree/master/examples/blog)
+数据需要隔离，参考 [Golang 单元测试：有哪些误区和实践？](https://developer.aliyun.com/article/778487) 所以使用 `sqlmock` 来实现，比如 [sqlmock-blog-demo](https://github.com/DATA-DOG/go-sqlmock/tree/master/examples/blog)
 
 适合使用 mock/stub 场景是
 
