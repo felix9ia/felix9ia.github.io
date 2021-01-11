@@ -6,8 +6,10 @@
 - [操作系统](/computer/system/README.md)
 - [算法](/computer/algorithm/README.md)
 - [数据结构](/computer/structures_algorithm/README.md)
+- [语言学习](/computer/lang/README.md)
 - JVM
 - HTTP
+- [马士兵讲堂](https://ke.qq.com/course/399017?taid=10898655607658153&tuin=6c381156)
 
 ## DOING
 - [测试](/computer/test/README.md)
