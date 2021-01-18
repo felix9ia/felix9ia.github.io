@@ -1,26 +1,15 @@
 /**
+ * TODO 思路: 用取整和取余来实现
  * @param k: An integer
  * @param n: An integer
  * @return: An integer denote the count of digit k in 1..n
  */
 const digitCounts = function (k, n) {
     let  resCount = 0
-    const kStr = k.toString()
+    const nStrCount = n.toString().length
 
-    for (let i = 0; i <= n; i++) {
-
-        const iStr = i.toString()
-        const iStrArr = iStr.split("")
-
-        console.log("iStrArr", iStrArr)
-
-        for (let j = 0; j < iStrArr.length; j++) {
-            const  ele = iStrArr[j]
-            if (ele === kStr) {
-                resCount++
-            }
-        }
-
+    while(n !== 0) {
+        parseInt(n / (10 ^ parseInt(nStrCount, 10)), 10)
     }
 
     return resCount
