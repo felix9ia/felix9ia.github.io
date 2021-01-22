@@ -14,6 +14,12 @@
 分为 [健康](./health/README.md)，[技术](./computer/README.md)，[阅读](./reading/README.md) 来进行记录，每周的成长尝试汇总到 [更新日志](./log/README.md) 当中记录更新。
 
 
+## 有始无终
+记录那些自己有始无终的想法
+[I have a plan](https://www.notion.so/I-have-a-plan-e319ef10bfd7497ba006c96e912fcfeb)
+
+
+## 在做的
 
 ## 学习思路
 - 找到相应技能下的`RoadMap`
