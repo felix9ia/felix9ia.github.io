@@ -1,29 +1,20 @@
 Arguments: 
-  /Users/jiapengfei/.nvm/versions/node/v11.13.0/bin/node /usr/local/bin/yarn
+  C:\Program Files\nodejs\node.exe C:\Users\felix\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add -D vuepress
 
 PATH: 
-  /Users/jiapengfei/.nvm/versions/node/v11.13.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Users/jiapengfei/.nvm/versions/node/v11.13.0/bin:JAVA_HOME:/usr/local/maven3.6/bin:/Users/yotakara/Library/Python/2.7/bin:/Users/jiapengfei/go/bin:/usr/local/mysql/bin:JAVA_HOME:/usr/local/maven3.6/bin:/Users/yotakara/Library/Python/2.7/bin:/Users/jiapengfei/go/bin:/usr/local/mysql/bin
+  C:\Users\felix\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\felix\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_152\bin;C:\Program Files\Java\jdk1.8.0_152\jre\bin;C:\Program Files\nodejs;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\Bluetooth Command Line Tools\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program1\apache-maven-3.6.3\bin;C:\Program1\apache-maven-3.6.3\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Users\felix\AppData\Local\Microsoft\WindowsApps;C:\Users\felix\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\felix\AppData\Roaming\npm;C:\windows\system32;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;C:\Program Files\JetBrains\PyCharm 2020.1.2\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
 
 Yarn version: 
-  1.22.4
+  1.9.4
 
 Node version: 
-  11.13.0
+  10.15.3
 
 Platform: 
-  darwin x64
+  win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/vuepress: tunneling socket could not be established, statusCode=404
-      at ClientRequest.onConnect (/usr/local/lib/node_modules/yarn/lib/cli.js:152223:19)
-      at Object.onceWrapper (events.js:281:20)
-      at ClientRequest.emit (events.js:193:13)
-      at Socket.socketOnData (_http_client.js:480:11)
-      at Socket.emit (events.js:193:13)
-      at addChunk (_stream_readable.js:296:12)
-      at readableAddChunk (_stream_readable.js:277:11)
-      at Socket.Readable.push (_stream_readable.js:232:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:150:17)
+  Error: 16808:error:1408F119:SSL routines:ssl3_get_record:decryption failed or bad record mac:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:469:
 
 npm manifest: 
   {
