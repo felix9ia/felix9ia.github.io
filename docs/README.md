@@ -2,7 +2,7 @@
 ![An image](../public/img/sloth.jpeg)
 <!-- ![Image from alias](~@img/sloth.jpeg) -->
 
-[在线文档](https://felix9ia.github.io/sloth/)，这里算是自己的人生操作系统的手册，在这里记录进步点滴，把自己的成长当做构建一个操作系统迭代一样。
+[仓库地址](https://gitee.com/felix9ia/sloth)，这里算是自己的人生操作系统的手册，在这里记录进步点滴，把自己的成长当做构建一个操作系统迭代一样。
 
 
 
