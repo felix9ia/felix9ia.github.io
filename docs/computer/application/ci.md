@@ -6,7 +6,7 @@
 
 ## CI/CD
 
-这里的 CI/CD 是总称，代表了持续集成、持续交付和持续部署。
+这里的 CI/CD 是总称，代表了持续集成、持续交付和持续部署。可以参考[Introduction to CI/CD with GitLab](https://docs.gitlab.com/ee/ci/introduction/)
 
 ![https://sean22492249.medium.com/gitlab-ci-cd-%E4%BB%8B%E7%B4%B9%E8%88%87-runner-%E7%9A%84%E6%9E%B6%E8%A8%AD-afdbde9f22aa](https://miro.medium.com/max/1400/0*SY75sciWGOk7ruik.png)
 
@@ -14,16 +14,13 @@
 
 持续集成（continuous Integration），简称 CI，是一种软件开始实践，是指每个成员在一天当中会不断的集成到主干分支，并且在提交、合并代码时对项目进行构建、编译和测试，每次集成都通过自动化的构建。测试不通过，不能进行集成。
 
-集成的流程包括以下：
-
-- lint 校验
-- 单元测试
-- 构建
-- 部署
+![](https://qcdn.xueyuanjun.com/wp-content/uploads/2019/04/069e09bfc30ba6ef9b890975676b0d69.jpg)
 
 ### 持续交付
 
 持续交付（Continuous Delivery）将集成到主干的软件新版本，手动部署到准生产环境（测试环境）
+
+![](https://qcdn.xueyuanjun.com/wp-content/uploads/2019/04/ec92ab317c3e22a2fe180de4d01df48a.jpg)
 
 ### 持续部署
 
@@ -49,7 +46,7 @@
 
 ### Jenkins
 
-市面上比较成熟的方案，几乎可以
+市面上比较成熟的方案，可以完整的实现 CI 和 CD
 
 ### 其他
 
@@ -62,11 +59,15 @@
 
 ![https://www.cnblogs.com/wilburxu/p/11051948.html](https://img2020.cnblogs.com/blog/1062001/202004/1062001-20200420104303539-1990871526.png)
 
-## Gitlab-CI 集成到项目
+## Gitlab-CI 搭建环境
 
-主要参考了[Golang基于Gitlab CI/CD部署方案](https://www.jianshu.com/p/8655f1ef26ee) 以及 [基于GitLab CI搭建Golang自动构建环境](https://www.cnblogs.com/wilburxu/p/11051948.html)一文,
+主要参考了[Golang基于Gitlab CI/CD部署方案](https://www.jianshu.com/p/8655f1ef26ee) 以及 [基于GitLab CI搭建Golang自动构建环境](https://www.cnblogs.com/wilburxu/p/11051948.html)一文, 以及 Bilibili 之前泄露过的[open-bilibili-go-common](https://gitee.com/felix9ia/open-bilibili-go-common.git)。
 
+集成的流程包括以下：
 
+- lint 校验
+- 单元测试
+- 构建
 
 ### 基础概念
 
@@ -151,15 +152,21 @@ sudo gitlab-ci-multi-runner list
 
 
 
-### 构建 pipeline
+## 构建 pipeline
 
-- lint
+### lint
 
-- unit_test
+### unit_test
 
-- build
 
-  可以参考 [Jenkins基于gitlab中的Tag进行构建](https://blog.csdn.net/weixin_43840640/article/details/100597073) ，以及 [使用Jenkins Git参数实现分支标签动态选择](https://blog.51cto.com/11064706/2511340) 来进行构建
+
+## Jenkins 部署
+
+可以参考 [Jenkins基于gitlab中的Tag进行构建](https://blog.csdn.net/weixin_43840640/article/details/100597073) ，以及 [使用Jenkins Git参数实现分支标签动态选择](https://blog.51cto.com/11064706/2511340) 来进行构建。
+
+
+
+
 
 
 
