@@ -21,7 +21,6 @@ export default ({
         // hash: "2222"
         query: query
     });
-    next()
     // ...
   });
 

@@ -156,17 +156,32 @@ sudo gitlab-ci-multi-runner list
 
 ### lint
 
+使用 `golint`
+
 ### unit_test
 
+使用 `go test`
+
+### coverage
+
+[Gitlab CI for Go projects](https://ronniegane.kiwi/blog/2019/06/18/go-gitlab/)
+
+[Golang Multi Package Test Coverage in Gitlab](https://penkovski.com/post/gitlab-golang-test-coverage/)
 
 
-## Jenkins 部署
 
-可以参考 [Jenkins基于gitlab中的Tag进行构建](https://blog.csdn.net/weixin_43840640/article/details/100597073) ，以及 [使用Jenkins Git参数实现分支标签动态选择](https://blog.51cto.com/11064706/2511340) 来进行构建。
+最后的配置解析
 
+```
+^coverage:\s(\d+(?:\.\d+)?%)
 
+```
 
+## 构建与 Jenkins 部署
 
+构建主要参考了 [Go 多模块构建方案](./go_mutil_module.md) 对项目进行。
+
+部署可以参考 [Jenkins基于gitlab中的Tag进行构建](https://blog.csdn.net/weixin_43840640/article/details/100597073) ，以及 [使用Jenkins Git参数实现分支标签动态选择](https://blog.51cto.com/11064706/2511340) 来进行构建。
 
 
 
