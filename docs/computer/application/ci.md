@@ -71,7 +71,7 @@
 
 ### 基础概念
 
-[Markfile]() 是Linux 的构建工具，具体教程可以参考 [Make 命令教程](https://www.ruanyifeng.com/blog/2015/02/make.html)
+[Markfile]() 是Linux 的构建工具，具体教程可以参考 [阮一峰：Make 命令教程](https://www.ruanyifeng.com/blog/2015/02/make.html)当中所说的。
 
 [用 GitLab CI 进行持续集成](https://segmentfault.com/a/1190000006120164) 文章中，对一些概念的梳理：
 
@@ -113,11 +113,59 @@
 
 [GitLab-CI与GitLab-Runner](https://www.jianshu.com/p/2b43151fb92e) 里描述了两者之间的关系
 
+安装 gitlab-ci-multi-runner
+
+```
+# https://www.cnblogs.com/wilburxu/p/11051948.html
+# For Debian/Ubuntu
+$ curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.deb.sh | sudo bash
+$ sudo apt-get install gitlab-ci-multi-runner
+
+$ curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.rpm.sh | sudo bash
+$ sudo yum install gitlab-ci-multi-runner
+yum remove gitlab-ci-multi-runner
+```
+
+
+
 是 Gitlab-CI 配置下的一个 Runner
 
 ```
 gitlab-ci-multi-runner register
 sudo gitlab-ci-multi-runner list
+```
+
+注意：会有权限的问题：
+
+```
+# https://www.cnblogs.com/wu-wu/p/13426658.html
+在runner执行过程中大多数是文件夹不存在，无权限。
+
+sudo gitlab-runner uninstall # 删除gitlab-runner
+
+gitlab-runner install --working-directory /home/gitlab-runner --user root   # 安装并设置--user(设置为root)
+
+sudo service gitlab-runner restart  # 重启gitlab-runner
+
+ps aux|grep gitlab-runner  # 查看当前runner用户
+```
+
+
+
+如果 你是 centos8，上面可能跑不通,要用下面的：
+
+```
+# https://gitlab.com/gitlab-org/gitlab-runner/-/issues/25554
+# For CentOS
+yum clean all
+curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh | sudo bash
+yum install gitlab-runner
+gitlab-runner register
+
+gitlab-runner install --working-directory /home/gitlab-runner --user root
+git 
+
+gitlab-runner run --user root
 ```
 
 
@@ -127,6 +175,12 @@ sudo gitlab-ci-multi-runner list
 - Go
 
   [Centos Linux 使用Yum安装Go和配置环境](https://www.jianshu.com/p/b2222fc04f47)
+
+  ```
+  yum install golang
+  ```
+
+  
 
 - `golint`
 
@@ -156,7 +210,9 @@ sudo gitlab-ci-multi-runner list
 
 ### lint
 
-使用 `golint`
+使用 `golint`，对整个项目进行扫描
+
+
 
 ### unit_test
 
@@ -164,18 +220,27 @@ sudo gitlab-ci-multi-runner list
 
 ### coverage
 
+测试覆盖率
+
 [Gitlab CI for Go projects](https://ronniegane.kiwi/blog/2019/06/18/go-gitlab/)
 
 [Golang Multi Package Test Coverage in Gitlab](https://penkovski.com/post/gitlab-golang-test-coverage/)
 
-
+### 徽章
 
 最后的配置解析
 
 ```
 ^coverage:\s(\d+(?:\.\d+)?%)
-
 ```
+
+
+
+### 结果
+
+最后形成的的结果是：
+
+
 
 ## 构建与 Jenkins 部署
 
