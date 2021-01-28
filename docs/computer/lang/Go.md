@@ -10,7 +10,7 @@
 
 [project-layout](https://github.com/golang-standards/project-layout/blob/master/README_zh.md)
 
-
+Bilibili 之前泄露过的 [open-bilibili-go-common](https://gitee.com/felix9ia/open-bilibili-go-common.git)
 
 ## 并发编程
 

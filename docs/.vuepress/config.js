@@ -1,6 +1,24 @@
-const path = require('path')
+const path = require("path");
 module.exports = {
+  title: "sloth",
   base: "/sloth/",
+  header: [
+    [
+      "meta",
+      {
+        "http-equiv": "Pragma",
+        content: "no-cache",
+      },
+      {
+        "http-equiv": "http-equiv",
+        content: "Cache-Control",
+      },
+      {
+        "http-equiv": "Expires",
+        content: "0",
+      },
+    ],
+  ],
   themeConfig: {
     nav: [
       { text: "Sloth", link: "/" },
@@ -17,8 +35,8 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        '@img': path.resolve(__dirname, './public/img')
-      }
-    }
-  }
+        "@img": path.resolve(__dirname, "./public/img"),
+      },
+    },
+  },
 };

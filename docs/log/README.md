@@ -30,3 +30,7 @@
 - 🌟 构建框架
 - 🚀 引入 Sloth 项目 和 [Variables in Markdown](https://github.com/marketplace/actions/variables-in-markdown)  概念
 
+### 初始化 [解构 open-bilibili-go-common](../computer/application/go_to_learn_bilibili.md)
+
+### 初始化 [Go 多模块构建方案](../computer/application/go_mutil_module.md)
+
