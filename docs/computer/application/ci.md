@@ -61,7 +61,7 @@
 
 ## Gitlab-CI 搭建环境
 
-主要参考了[Golang基于Gitlab CI/CD部署方案](https://www.jianshu.com/p/8655f1ef26ee) 以及 [基于GitLab CI搭建Golang自动构建环境](https://www.cnblogs.com/wilburxu/p/11051948.html)一文, 以及 Bilibili 之前泄露过的[open-bilibili-go-common](https://gitee.com/felix9ia/open-bilibili-go-common.git)。
+主要参考了[Golang基于Gitlab CI/CD部署方案](https://www.jianshu.com/p/8655f1ef26ee) 以及 [基于GitLab CI搭建Golang自动构建环境](https://www.cnblogs.com/wilburxu/p/11051948.html)一文。
 
 集成的流程包括以下：
 
@@ -242,7 +242,17 @@ gitlab-runner run --user root
 
 
 
-## 构建与 Jenkins 部署
+### build
+
+ 以及 Bilibili 之前泄露过的[open-bilibili-go-common](https://gitee.com/felix9ia/open-bilibili-go-common.git),整体思路是采用 `Merge Request`。
+
+```
+[Pull request vs Merge request](https://stackoverflow.com/questions/22199432/pull-request-vs-merge-request)
+
+[阮一峰：Merge Request 的命令行管理](http://www.ruanyifeng.com/blog/2017/07/pull_request.html)
+```
+
+而各自的 `fork` 仓库则使用 `tag` 和类似 `Jenkins`的构建工具通过 `tag`的版本管理进行打包部署。
 
 构建主要参考了 [Go 多模块构建方案](./go_mutil_module.md) 对项目进行。
 
