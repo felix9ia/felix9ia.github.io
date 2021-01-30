@@ -1,5 +1,7 @@
 
 
+
+
 # 解构 open-bilibili-go-common
 
 >  手动引用：盘尼西林 -New Boy
@@ -18,15 +20,38 @@
 
 ## 根目录
 
+### .gitlab
+
+存放 `issue` 和`merge_request`的模板
+
+#### Issue_tmplates
+
+#### Merge_request_templates
+
+
+
+### .rider
+
+
+
+### app
+
+
+
+### build
+
+### library
+
+### vendor
+
+
+
 ### README.md
 
 主要介绍了规范和负责人
 
 #### 项目规范
 
-
-
 #### 负责人信息
 
-
-
+### 
