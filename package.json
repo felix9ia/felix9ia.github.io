@@ -1,15 +1,22 @@
 {
-  "name": "sloth",
+  "name": "felix-blog",
   "version": "1.0.0",
-  "description": "im a sloth",
-  "main": "index.js",
-  "author": "felix",
-  "license": "MIT",
+  "description": "Template for vuepress-theme-hope",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "serve": "vuepress dev src",
+    "cleanServe": "vuepress dev src --no-cache",
+    "build": "vuepress build src",
+    "test": "echo \"Warning: no test specified\" && exit 0"
   },
-  "devDependencies": {
-    "vuepress": "^1.7.1"
+  "author": "Mr.Hope",
+  "license": "MIT",
+  "keywords": [
+    "vuepress",
+    "personal-blog"
+  ],
+  "dependencies": {
+    "vuepress": "1.8.0",
+    "vuepress-plugin-auto-sidebar": "^1.5.0",
+    "vuepress-theme-hope": "1.9.3"
   }
 }
