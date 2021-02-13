@@ -41,18 +41,13 @@ module.exports = config({
         logo: "/logo.svg",
         hostname: "https://vuepress-theme-hope-demo.mrhope.site",
 
-        author: "Mr.Hope",
-        repo: "https://github.com/vuepress-theme-hope/vuepress-theme-hope",
-        docsRepo: "https://github.com/vuepress-theme-hope/demo",
+        author: "felix9ia",
+        repo: "https://github.com/felix9ia",
+        // docsRepo: "https://github.com/vuepress-theme-hope/demo",
         docsDir: "src",
         nav: [
             {text: "博客主页", link: "/", icon: "home"},
             {text: "项目主页", link: "/home/", icon: "home"},
-            {
-                text: "如何使用",
-                icon: "creative",
-                link: "/guide/",
-            },
         ],
         // locales: {
         //     "/en/": {
@@ -97,8 +92,8 @@ module.exports = config({
 
         comment: {
             type: "valine",
-            appId: "msnseO76haIVIGvfJ10BKnpv-gzGzoHsz",
-            appKey: "9QMulKhu7EDp1va0TYXR2PrI",
+            appId: "HJkxRfRvuGxbNSExpCIrM6Vv-gzGzoHsz",
+            appKey: "49rygaa2PM8bXhP7CchWDyoq",
         },
 
         copyright: true,
