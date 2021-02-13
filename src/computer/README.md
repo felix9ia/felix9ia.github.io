@@ -1,12 +1,18 @@
 # 技术
-
-
-## TODO
+目录如下:
+## 目录
 
 - [操作系统](/computer/system/README.md)
 - [算法](/computer/algorithm/README.md)
 - [数据结构](/computer/structures_algorithm/README.md)
 - [语言学习](/computer/lang/README.md)
+- [应用](/computer/application/README.md)
+- [设计模式](/computer/design_pattern/README.md)
+- [网络](/computer/network/README.md)
+- [测试](/computer/test/README.md)
+- [运维](/computer/op/README.md)
+
+## TODO
 - JVM
 - HTTP
 - [马士兵讲堂](https://ke.qq.com/course/399017?taid=10898655607658153&tuin=6c381156)

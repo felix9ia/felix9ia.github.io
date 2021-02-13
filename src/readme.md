@@ -2,6 +2,7 @@
 blog: true
 home: true
 icon: home
+bgImage: /bg.webp
 title: 博客主页
 heroImage: /logo.svg
 heroText: Sloth
