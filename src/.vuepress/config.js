@@ -48,6 +48,7 @@ module.exports = config({
         nav: [
             {text: "博客主页", link: "/", icon: "home"},
             {text: "项目主页", link: "/home/", icon: "home"},
+            {text: "关于我", link: "/about_me/", icon: "creative"},
         ],
         // locales: {
         //     "/en/": {

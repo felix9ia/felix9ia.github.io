@@ -11,7 +11,7 @@ action:
     type: primary
 
   - text: 博客主页 🏠
-    link: /zh/
+    link: /
 
 features:
   - title: 浏览量与评论 💬
