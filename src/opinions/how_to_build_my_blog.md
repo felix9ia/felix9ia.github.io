@@ -6,7 +6,7 @@
 
 所有的`UI`都只是一个`View`方式，这只是一个壳子，就像是`iPhone`的硬件只是用来承载其真正的大脑 - 操作系统。而这个操作系统只不是摸不着的思维实体化到`UI` 上的结果。
 
-
+## 缘由
 
 所有的笔记软件都是一个壳子或者是一个View，而不应该作存储的事情。
 
@@ -40,7 +40,30 @@
 
  Notion 是记录零碎的想法，而输出观点则使用 `Typora`搭配 `GitHub` 和`VuePress` ,
 
+## 过程
 
 
-这是我的仓库[Slot](https://github.com/felix9ia/sloth.git)，然后依靠[vuePress]()
 
+这是我的仓库[Slot](https://github.com/felix9ia/sloth.git)，然后依靠[vuePress](https://vuepress.vuejs.org/)
+
+### 部署
+
+TODO
+
+### 自定义域名
+
+1. 配置项目
+
+   在项目的 `deploy.sh`中，将自定义的`domain`开启：
+
+   ```
+   echo 'blog.medalwall.top' > CNAME
+   ```
+
+   之后就会在 `github` 的`github.com/felix9ia/felix9ia.github.io`仓库中的`setting`中的`Custom domain` 看到。然后将 `Enforce HTTPS `勾选
+
+2. 配置域名解析
+
+   ![](https://tva1.sinaimg.cn/large/008eGmZEly1gnskenda6uj31sw0ac75f.jpg)
+
+之后就可以用自定义的域名访问了 [https://blog.medalwall.top/](https://blog.medalwall.top/)

@@ -4,7 +4,8 @@ module.exports = config({
     title: "Sloth",
     description: "活在当下",
 
-    base: "/sloth/",
+    // base: "/sloth/",
+    base: "/",
 
     dest: "./dist",
     plugins: {
