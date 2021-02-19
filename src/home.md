@@ -21,7 +21,7 @@ features:
 
   - title: webpack-demo 📝
     details: webpack 的使用方式
-    link: https://vuepress-theme-hope.github.io/zh/guide/feature/page-info/
+    link: https://github.com/felix9ia/webpack-demo
 
   - title: CI/CD 工程实践 🧰
     details: 将 gitlab-ci 集成到研发流程中
