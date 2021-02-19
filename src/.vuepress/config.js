@@ -3,7 +3,6 @@ const {config} = require("vuepress-theme-hope");
 module.exports = config({
     title: "Sloth",
     description: "活在当下",
-
     // base: "/sloth/",
     base: "/",
 
@@ -39,6 +38,7 @@ module.exports = config({
     },
 
     themeConfig: {
+        baseLang: 'zh-CN',
         logo: "/logo.svg",
         hostname: "https://vuepress-theme-hope-demo.mrhope.site",
 
@@ -47,8 +47,8 @@ module.exports = config({
         // docsRepo: "https://github.com/vuepress-theme-hope/demo",
         docsDir: "src",
         nav: [
-            {text: "博客主页", link: "/", icon: "home"},
-            {text: "项目主页", link: "/home/", icon: "home"},
+            {text: "主页", link: "/", icon: "home"},
+            {text: "项目", link: "/home/", icon: "home"},
             {text: "关于我", link: "/about_me/", icon: "creative"},
         ],
         // locales: {

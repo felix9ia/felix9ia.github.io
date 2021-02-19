@@ -3,10 +3,10 @@ blog: true
 home: true
 icon: home
 bgImage: /bg.webp
-title: 博客主页
+title: felix9ia
 heroImage: /logo.svg
 heroText: Sloth
-tagline: 你可以在这里放置你的口号与标语
+tagline: 慢即是快
 project:
   - type: project
     name: 技术
@@ -32,3 +32,4 @@ footer: 自定义你的页脚文字
 ---
 
 相关配置文档请见 [博客主页](https://vuepress-theme-hope.github.io/zh/guide/layout/blog/)
+
