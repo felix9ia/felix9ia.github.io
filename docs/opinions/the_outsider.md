@@ -7,7 +7,7 @@
 分离是最好体现规则的，每当我们毕业，离职之时，不对付的人也会卸下彼此对彼此的敌对眼光。
 
 ## 社会
-人类建立了规则，就建立了社会。社会赋予人们角色。但角色需要在不同的场合下切换。是因为需要走出某一个规则，进入到某一个规则当中。
+人类建立了规则，就建立了社会。社会赋予人们角色。但角色需要在不同的场合下切换。是因为需要走出某一个规则，进入到某一个规则当中。所以，我不喜欢社会科学。经济学、政治学、社会学、法学。我应该是喜欢自然科学。
 
 ## 立场
 立场之下，对贪婪的定义也不同。那些有钱的富家子弟，
@@ -53,4 +53,22 @@
 而生命在于不同的体验。
 
 ## 尾巴
+我仍然会愤怒，有事的时候是愤怒我们因为立场而彼此伤害，剥削。我们其实大可不必这样，就像 imagne 所描写的那样。
+
+```
+Imagine there's no heaven, it's easy if you try
+No hell below us, above us only sky
+Imagine all the people living for today （Uh...）
+Imagine there's no countries, it isn't hard to do
+Nothing to kill or die for, and no religion too
+Imagine all the people living life in peace （You...）
+You may say that I'm a dreamer, but I'm not the only one
+I hope some day you'll join us,and the world will be as one
+Imagine no possessions,I wonder if you can
+No need for greed or hunger, a brotherhood of man
+Imagine all the people sharing all the world （You...）
+You may say that I'm a dreamer,but I'm not the only one
+I hope some day you'll join us, and the world will live as one
+```
+
 我需要记录，因为我需要让后人，或者是其他文明知道，这一粒尘埃曾经存在过。我认为这就是我写作的意义。
