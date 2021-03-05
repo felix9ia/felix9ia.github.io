@@ -1,3 +1,13 @@
+---
+time: 2020-3-5
+
+
+
+
+---
+
+# 
+
 # K8S 实践教程
 
 这里是 k8s 的快速上手教程
@@ -5,6 +15,8 @@
 ## 参考
 
 [kubernetes-basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
+
+[2020版Kubernetes快速上手指南，让你所见即所得](https://zhuanlan.zhihu.com/p/138876909)
 
 ## 概念
 

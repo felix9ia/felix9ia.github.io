@@ -1,3 +1,13 @@
+---
+time: 2020-3-5
+
+
+
+
+---
+
+# 
+
 # Docker 教程
 
 以对 `zookeeper`进行使用为例
@@ -119,6 +129,18 @@ docker exec -it 45850daa6b9b bash
 
 # 重启
 ./bin/zkServer.sh restart
+```
+
+### 查看日志
+
+```
+docker logs --tail 50 --follow --timestamps xxx
+```
+
+### 进入容器
+
+```
+docker exec -it gitlab-runner /bin/bash
 ```
 
 ## 进阶
