@@ -1,3 +1,13 @@
+---
+time: 2020-3-5
+
+
+
+
+---
+
+# 
+
 # CI/CD实践
 
 这里是 [构建应用流程](./构建应用流程.md) 环节当中的一部分，示例代码放在了 [ci_demo](https://gitlab.com/felix9ia/ci_demo) 当中
@@ -113,62 +123,57 @@
 
 [GitLab-CI与GitLab-Runner](https://www.jianshu.com/p/2b43151fb92e) 里描述了两者之间的关系
 
-安装 gitlab-ci-multi-runner
+https://docs.gitlab.com/runner/install/linux-manually.html
+
+\# Replace ${arch} with any of the supported architectures, e.g. amd64, arm, arm64 # A full list of architectures can be found here https://gitlab-runner-downloads.s3.amazonaws.com/latest/index.html curl -LJO "https://gitlab-runner-downloads.s3.amazonaws.com/latest/deb/gitlab-runner_arm64.deb"
+
+#### 拉取镜像
+
+这里需要注意平台的问题，是 amd64 还是 arm64
+
+[yobasystems-gitlab-runner](https://github.com/yobasystems/gitlab-runner)
+
+[ulm0-gitlab-runner](https://github.com/ulm0/gitlab-runner)
+
+#### 启动
 
 ```
-# https://www.cnblogs.com/wilburxu/p/11051948.html
-# For Debian/Ubuntu
-$ curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.deb.sh | sudo bash
-$ sudo apt-get install gitlab-ci-multi-runner
-
-$ curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.rpm.sh | sudo bash
-$ sudo yum install gitlab-ci-multi-runner
-yum remove gitlab-ci-multi-runner
+docker run -d --name arm-runner \
+-v $(pwd)/.runner:/etc/gitlab-runner -v /server:/server \
+--restart=always \
+klud/gitlab-runner
 ```
 
-
-
-是 Gitlab-CI 配置下的一个 Runner
+#### 注册
 
 ```
-gitlab-ci-multi-runner register
-sudo gitlab-ci-multi-runner list
+docker exec -it arm-runner /bin/sh
 ```
 
-注意：会有权限的问题：
-
 ```
-# https://www.cnblogs.com/wu-wu/p/13426658.html
-在runner执行过程中大多数是文件夹不存在，无权限。
-
-sudo gitlab-runner uninstall # 删除gitlab-runner
-
-gitlab-runner install --working-directory /home/gitlab-runner --user root   # 安装并设置--user(设置为root)
-
-sudo service gitlab-runner restart  # 重启gitlab-runner
-
-ps aux|grep gitlab-runner  # 查看当前runner用户
+docker exec -it arm-runner gitlab-runner register
 ```
 
+#### 其他操作
 
-
-如果 你是 centos8，上面可能跑不通,要用下面的：
+可以细节参考：[搭建一个使用 GitLab CI 的项目](https://segmentfault.com/a/1190000023117085)
 
 ```
-# https://gitlab.com/gitlab-org/gitlab-runner/-/issues/25554
-# For CentOS
-yum clean all
-curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh | sudo bash
-yum install gitlab-runner
-gitlab-runner register
-
-gitlab-runner install --working-directory /home/gitlab-runner --user root
-git 
-
-gitlab-runner run --user root
+# 停止服务
+sudo gitlab-runner stop
+# 卸载服务
+sudo gitlab-runner uninstall
+# 重新安装服务，指定工作目录和用户
+sudo gitlab-runner install --working-directory /home/gitlab-runner --user root
+# 完整配置
+# sudo gitlab-runner install --working-directory /home/gitlab-runner --config /etc/gitlab-runner/config.toml --service gitlab-runner --syslog --user gitlab-runner
+# 校验
+sudo gitlab-runner verify
+# 启动服务
+sudo gitlab-runner start
+# 查看状态
+sudo gitlab-runner status
 ```
-
-
 
 ### 安装相关相关依赖
 
@@ -179,8 +184,6 @@ gitlab-runner run --user root
   ```
   yum install golang
   ```
-
-  
 
 - `golint`
 
@@ -234,8 +237,6 @@ gitlab-runner run --user root
 ^coverage:\s(\d+(?:\.\d+)?%)
 ```
 
-
-
 ### 结果
 
 最后形成的的结果是：
@@ -279,7 +280,5 @@ gitlab-runner run --user root
 [持续集成的定义和常用 CI 系统对比](https://laravelacademy.org/post/19615)
 
 [Gitlab CI/CD 介紹與 Runner 的架設](https://sean22492249.medium.com/gitlab-ci-cd-%E4%BB%8B%E7%B4%B9%E8%88%87-runner-%E7%9A%84%E6%9E%B6%E8%A8%AD-afdbde9f22aa)
-
-
 
 [golang-pre-commit](https://gist.github.com/kolotaev/9d9f7e1e0cfbdaf88dd91d615613a977#file-golang-pre-commit)
