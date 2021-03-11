@@ -17,6 +17,6 @@ const digitCounts = function (k, n) {
 
 
 
-const count = digitCounts(1, 12)
+let count = digitCounts(1, 12)
 
 console.log("count: ", count)
