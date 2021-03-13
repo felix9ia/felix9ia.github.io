@@ -51,7 +51,7 @@ module.exports = config({
     nav: [
       { text: "主页", link: "/", icon: "home" },
       { text: "项目", link: "/home/", icon: "home" },
-      { text: "关于我", link: "/about_me/", icon: "creative" },
+      { text: "关于我", link: "/intro/", icon: "creative" },
     ],
     // locales: {
     //     "/en/": {
