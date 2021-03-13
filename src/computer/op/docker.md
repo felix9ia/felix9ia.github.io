@@ -153,3 +153,32 @@ docker rename old_name new_name
 docker rm zookeeper
 ```
 
+
+
+#### 构建
+
+```
+docker build
+docker-compose
+```
+
+
+
+#### 推送
+
+
+
+```
+docker tag articleapp_app azimshaik/articleapp_app
+
+docker push azimshaik/articleapp_app
+
+
+
+docker tag lfcp_srv_local_sms-service 192.168.50.108:8686/library/lfcp_srv_local_sms-service:latest
+
+docker  push 192.168.50.108:8686/library/lfcp_srv_local_sms-service  
+```
+
+
+
