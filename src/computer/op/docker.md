@@ -164,6 +164,14 @@ docker-compose
 
 
 
+#### 打标签
+
+```
+docker tag httpd:test fedora/httpd:version1.0.test
+```
+
+
+
 #### 推送
 
 
@@ -174,11 +182,14 @@ docker tag articleapp_app azimshaik/articleapp_app
 docker push azimshaik/articleapp_app
 
 
-
 docker tag lfcp_srv_local_sms-service 192.168.50.108:8686/library/lfcp_srv_local_sms-service:latest
 
 docker  push 192.168.50.108:8686/library/lfcp_srv_local_sms-service  
 ```
 
 
+
+## 参考
+
+[docker tag](https://docs.docker.com/engine/reference/commandline/tag/)
 

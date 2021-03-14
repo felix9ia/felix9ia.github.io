@@ -8,17 +8,9 @@ time: 2020-3-5
 
 # 
 
-# 制作 CLI 教程
+# Oclif 制作 CLI 教程
 
-记录自己制作 CLI 的过程。
-
-## 环境
-
-以下是依赖环境：
-
-```
-# nvm alias default v12
-```
+[oclif.io](https://oclif.io/)
 
 
 
