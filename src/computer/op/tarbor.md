@@ -48,6 +48,23 @@ docker login cp.xxx.cn:8686
 
 输入账号和密码，之后会显示`login success`即可。
 
+
+
+### 代理镜像仓库
+
+
+
+拉取缓存
+
+```
+ docker pull cp.wingchain.cn:8686/proxy/library/zookeeper:latest
+
+```
+
+
+
+
+
 ## 参考
 
 
