@@ -30,3 +30,8 @@ services:
 [docker-compose push](https://docs.docker.com/compose/reference/push/)
 
 https://devdojo.com/bobbyiliev/how-to-install-docker-and-docker-compose-on-raspberry-pi
+
+Env_file 和 .env 的区别
+
+[docker-compose not recognizing env_file file/location, and still tries to use the default .env](https://stackoverflow.com/questions/39542905/docker-compose-not-recognizing-env-file-file-location-and-still-tries-to-use-th)
+
