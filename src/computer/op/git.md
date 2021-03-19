@@ -37,3 +37,12 @@
 
 [Git submodule 子模块的管理和使用](https://www.jianshu.com/p/9000cd49822c)
 
+[git submodule删除后重新添加问题](https://blog.csdn.net/dongguanghuiyin/article/details/78792992)
+
+```
+git rm --cached submodule_path
+git rm .gitmodules
+rm .git/config
+rm .git/modules/xxx
+```
+

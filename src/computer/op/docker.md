@@ -193,3 +193,7 @@ docker  push 192.168.50.108:8686/library/lfcp_srv_local_sms-service
 
 [docker tag](https://docs.docker.com/engine/reference/commandline/tag/)
 
+[清理Docker的container，image与volume](https://note.qidong.name/2017/06/26/docker-clean/#:~:text=%E6%95%B0%E6%8D%AE%E5%8D%B7%E7%9A%84%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4,%E5%8F%AF%E5%88%A0%E9%99%A4%E6%89%80%E6%9C%89%E6%97%A0%E7%94%A8%E5%8D%B7%E3%80%82)
+
+[停止、删除所有的docker容器和镜像](https://colobu.com/2018/05/15/Stop-and-remove-all-docker-containers-and-images/)
+
