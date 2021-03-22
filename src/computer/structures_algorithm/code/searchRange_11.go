@@ -39,7 +39,7 @@ func dfs(root *TreeNode, k1 int, k2 int, res []int) {
  * @return: return: Return all keys that k1<=key<=k2 in ascending order
  */
 func searchRange(root *TreeNode, k1 int, k2 int) []int {
-	var result []int
+	var result []int = make([]int, 0)
 	// write your code here
 	dfs(root, k1, k2, result)
 	return result
