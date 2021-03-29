@@ -6,7 +6,7 @@ time: 2020-3-5
 
 ---
 
-# 
+
 
 # Oclif 制作 CLI 教程
 
@@ -27,6 +27,16 @@ docker run -d --restart=unless-stopped  --name nexus \
 sonatype/nexus3:3.8.0
 ```
 
+### 交互部分
+
+```
+import cli from 'cli-ux'
+```
+
+```
+import * as inquirer from 'inquirer'
+```
+
 
 
 ## 参考
@@ -39,5 +49,11 @@ sonatype/nexus3:3.8.0
 
 [npm 私有模块的3种方法](https://www.jianshu.com/p/a9540d9f8d9c)
 
+[eemeli - yaml](https://github.com/eemeli/yaml)
+
+[git - js](https://github.com/steveukx/git-js)
+
 ### 其他
+
+[深入对比TOML，JSON和YAML](https://www.cnblogs.com/sunsky303/p/9208848.html)
 
