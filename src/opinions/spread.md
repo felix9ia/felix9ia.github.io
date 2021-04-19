@@ -15,7 +15,9 @@ time: 2020-4-20
 
 > **传播**（**Communication**，来源于拉丁语中的*commūnicāre*, 意为"分享"[[1\]](https://zh.wikipedia.org/wiki/传播#cite_note-1)）是人们通过[符号](https://zh.wikipedia.org/wiki/符号)、[讯号](https://zh.wikipedia.org/wiki/訊號)，传递、接收与[反馈](https://zh.wikipedia.org/wiki/反馈)讯号的活动；是人们彼此交换意见、[思想](https://zh.wikipedia.org/wiki/思想)、[情感](https://zh.wikipedia.org/wiki/情感)，以达到相互了解和影响的过程；世界处处充满了传播现象，生命每时每刻都在进行传播活动。
 
+很多人不清楚为什么马斯克会同时喊 BTC 和 Doge，而 Doge 是在 Coinbase 之后起的势，我不会试着用因果来分析前后，而是趋势之间的相互促进。
 
+底层人民总是有迫害妄想症，怕被资本家剥削。但稍微有理智的人就能想通。一个都要上火星的人，会来剥削人民？
 
 ## 传播的早期
 
