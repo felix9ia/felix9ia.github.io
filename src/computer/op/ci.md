@@ -121,6 +121,24 @@ time: 2020-3-5
 
 ### 安装和运行 Gitlab Runner
 
+具体的常用命令可以参考： [GitLab Runner安装注册配置管理](https://cloud.tencent.com/developer/article/1624837)
+
+运行命令时全部使用 `sudo` 前缀
+
+使用 docker 安装 runner，[install runner by docker](https://docs.gitlab.com/runner/install/docker.html)
+
+自己梳理的流程是：
+
+ register(注册) -> run（启动） -> install（服务管理）
+
+```
+以普通用户身份注册的 Gitlab 服务不会在后台运行，此时需要手动执行 gitlab-runner run 命令
+
+如果是超级用户用 sudo gitlab-runner register 注册的服务，会在后台运行，不需要执行上述命令。
+```
+
+
+
 [GitLab-CI与GitLab-Runner](https://www.jianshu.com/p/2b43151fb92e) 里描述了两者之间的关系
 
 https://docs.gitlab.com/runner/install/linux-manually.html
@@ -167,6 +185,8 @@ sudo gitlab-runner uninstall
 sudo gitlab-runner install --working-directory /home/gitlab-runner --user root
 # 完整配置
 # sudo gitlab-runner install --working-directory /home/gitlab-runner --config /etc/gitlab-runner/config.toml --service gitlab-runner --syslog --user gitlab-runner
+# 注册
+ sudo gitlab-runner register
 # 校验
 sudo gitlab-runner verify
 # 启动服务
@@ -174,6 +194,28 @@ sudo gitlab-runner start
 # 查看状态
 sudo gitlab-runner status
 ```
+
+WARN: 如何遇到没有权限调用 install 时，请调用
+
+```
+kill -TERM 1
+```
+
+#### 构建问题
+
+[Cannot connect to the Docker daemon at tcp://localhost:2375. Is the docker daemon running?](https://stackoverflow.com/questions/61105333/cannot-connect-to-the-docker-daemon-at-tcp-localhost2375-is-the-docker-daem)
+
+
+
+[dial tcp: lookup thedockerhost on 183.60.82.98:53: no such hos](https://devops.stackexchange.com/questions/9359/gitlab-ci-error-during-connect-get-http-docker2375-v1-40-containers-jsonall)
+
+如果说没有权限之类的，就添加下面的：
+
+```
+privileged = true
+```
+
+
 
 ### 安装相关相关依赖
 
