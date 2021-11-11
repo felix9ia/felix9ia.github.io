@@ -12,7 +12,7 @@ time: 2020-3-5
 
 这里是 [构建应用流程](./构建应用流程.md) 环节当中的一部分，示例代码放在了 [ci_demo](https://gitlab.com/felix9ia/ci_demo) 当中
 
-
+[](https://meigit.readthedocs.io/en/latest/gitlab_ci_.gitlab-ci.yml_detail.html#artifacts-paths)
 
 ## CI/CD
 
