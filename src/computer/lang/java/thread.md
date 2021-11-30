@@ -102,8 +102,21 @@ time: 2020-10-22
     }
 ```
 
+## 线程池
+
+[在基于spring体系的业务中正确地关闭线程池](https://www.iflym.com/index.php/code/202004110001.html) 和 [Java中守护线程的总结 thread.setDaemon(true)](https://www.cnblogs.com/kelelipeng/p/11599840.html) 中提到，` thread.setDaemon(true)` 才能够让进程正常的退出。
+
+```
+    Thread thread = new Thread(r);
+    thread.setName(name + "-" + thread.getId());
+    thread.setDaemon(true);
+```
+
 
 
 ## 参考
 
 [java多线程读取、操作List集合](https://blog.csdn.net/u013514928/article/details/77790636)
+
+[线程池有哪些作用](https://zhuanlan.zhihu.com/p/259624983)
+

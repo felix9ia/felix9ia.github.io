@@ -1,5 +1,13 @@
 # ES
 
+记录
+
+## Java
+
+可以参考 [Elasticsearch Java 手册](https://es.quanke.name/aggregations/metrics-aggregations.html)
+
+## 聚合
+
 ```
 interval(时间间隔)的可用表达式：
 
