@@ -8,6 +8,16 @@ TBC
 
 ### 配置细节
 
+如果编辑模式下的左侧的工具栏的列表请求不回来，需要调整 `/etc/nginx/nginx.conf` 配置。
+
+```
+http {
+		types_hash_max_size 4096;
+}
+```
+
+
+
 如果要更新 spark 的版本，需要配置`/DSS-Linkis/dss/conf/dss.properties`
 
 ```
@@ -35,7 +45,12 @@ export SCALA_HOME=/home/hadoop/scala-2.12.15
 export PATH=$PATH:$SCALA_HOME/bin
 ```
 
+## 启动
 
+- Eureka http://172.15.0.25:20303/
+- Hadoop http://172.15.0.25:8088/
+- HDFS http://172.15.0.25:50070/
+- DSS http://172.15.0.25:8901/
 
 ## Schedulis 搭建与配置过程
 
@@ -86,11 +101,31 @@ export PATH=$PATH:$SCALA_HOME/bin
     azkaban.native.lib=/appcom/Install/AzkabanInstall/wtss_exec/bin
     ```
 
+11. 配置`plugins/jobtypes/common.properties`
+
+    需要配置，否则启动不起来
+
+    ```
+    #配置集群 Hive 的元数据库（密码用 base64 加密）
+    job.datachecker.jdo.option.name="job"
+    job.datachecker.jdo.option.url=jdbc:mysql://host:3306/db_name?useUnicode=true&amp;characterEncoding=UTF-8
+    job.datachecker.jdo.option.username=username
+    job.datachecker.jdo.option.password=password
     
-
-11. ~~配置`plugins/jobtypes/common.properties`~~
-
-    这里暂时没用到，先不配置了。
+    #配置 Schedulis 的数据库地址（密码用 base64 加密）
+    msg.eventchecker.jdo.option.name="msg"
+    msg.eventchecker.jdo.option.url=jdbc:mysql://host:3306/db_name?useUnicode=true&characterEncoding=UTF-8
+    msg.eventchecker.jdo.option.username=username
+    msg.eventchecker.jdo.option.password=password
+    
+    
+    #此部分依赖于第三方脱敏服务mask，暂未开源，将配置写为和job类型一样即可（密码用 base64 加密） 
+    
+    bdp.datachecker.jdo.option.name="bdp"
+    bdp.datachecker.jdo.option.url=jdbc:mysql://host:3306/db_name?useUnicode=true&amp;characterEncoding=UTF-8
+    bdp.datachecker.jdo.option.username=username
+    bdp.datachecker.jdo.option.password=password
+    ```
 
 12. 配置 `conf/azkaban.properties`
 
@@ -130,11 +165,21 @@ export PATH=$PATH:$SCALA_HOME/bin
     azkaban.native.lib=/appcom/Install/AzkabanInstall/wtss-exec/lib
     ```
 
-    
+16. 配置 plugins/jobtypes/linkis/private.properties
 
-16. ~~plugins/jobtypes/linkis/private.properties~~
+    下载jobtype插件的依赖和配置，链接: 链接：https://pan.baidu.com/s/1FuSBdgdTAHL1PxUXnfbLBw 提取码：0cpo；解压最新版本的zip，该配置文件存放在 ExecServer 安装包下的 plugins/jobtypes/linkis 目录下，主要是设置 jobtype 所需的 lib 所在位置
 
-17. ~~plugins/jobtypes/linkis/plugin.properties~~ 
+    ```
+    #将该值修改为 ExecServer 安装包目录下的 /plugins/jobtypes/linkis/extlib
+    jobtype.lib.dir=/appcom/Install/AzkabanInstall/wtss-exec/plugins/jobtypes/linkis/lib
+    ```
+
+17. plugins/jobtypes/linkis/plugin.properties 
+
+    ```
+    #将该值修改为 Linkis 的gateway地址
+    wds.linkis.gateway.url=http://127.0.0.1:9001
+    ```
 
 18. 配置 WebServer
 
@@ -160,6 +205,8 @@ export PATH=$PATH:$SCALA_HOME/bin
 
 ## 启动服务
 
+> 注意事项：启动的时候一定要切换到 bin 的上一层目录，因为上层目录有一些文件是被依赖的。
+
 对数据库进行初始化完毕，以及修改完以上的配置文件后，就可以启动了
 
 进入 ExecutorServer 安装包路径，注意不要进到 `bin` 目录下，执行成功会有 `success` 字样
@@ -173,6 +220,22 @@ export PATH=$PATH:$SCALA_HOME/bin
 ```
 ./bin/start-web.sh
 ```
+
+## 联动
+
+参考 [SchedulisAppConn插件安装文档.md](https://github.com/WeBankFinTech/DataSphereStudio-Doc/blob/main/zh_CN/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/SchedulisAppConn%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E6%96%87%E6%A1%A3.md) 中的 `3. 安装Schedulis AppConn`，执行安装。
+
+```
+sh ${DSS_HOME}bin/appconn-install.sh
+
+# 执行appcon-install安装脚本后，输入对应的appconn名称
+# 按照提示输入对应schedulis服务对应的IP，和PORT
+>> schedulis
+>> 127.0.0.1
+>> 8089
+```
+
+
 
 - 
 
