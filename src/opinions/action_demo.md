@@ -1,6 +1,6 @@
-# 一种Markdown文本转化为平台认证的方法
+# 一种Markdown文本转化为平台认证的实践方法
 
-## 现有方法
+## [现有方法](https://2die.cn)
 
 正常的 markdown 的引用是 `[维基百科-复利](https://zh.wikipedia.org/zh-hant/%E5%A4%8D%E5%88%A9) `, 这样当你点击 [维基百科-复利](https://zh.wikipedia.org/wiki/%E5%A4%8D%E5%88%A9) 时它就会跳转至相应的维基百科的复利概念页面。
 
