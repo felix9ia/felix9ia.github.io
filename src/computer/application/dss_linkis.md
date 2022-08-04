@@ -147,7 +147,7 @@ export PATH=$PATH:$SCALA_HOME/bin
 
     
 
-13. 新建 `host.properties`, `vi /appcom/config/wtss-config/host.properties
+13. 新建 `host.properties`, `vi /appcom/config/wtss-config/host.properties`
 
     ```
     主机名=ServerId
@@ -167,7 +167,7 @@ export PATH=$PATH:$SCALA_HOME/bin
 
 16. 配置 plugins/jobtypes/linkis/private.properties
 
-    下载jobtype插件的依赖和配置，链接: 链接：https://pan.baidu.com/s/1FuSBdgdTAHL1PxUXnfbLBw 提取码：0cpo；解压最新版本的zip，该配置文件存放在 ExecServer 安装包下的 plugins/jobtypes/linkis 目录下，主要是设置 jobtype 所需的 lib 所在位置
+    下载jobtype插件的依赖和配置，链接：https://pan.baidu.com/s/1FuSBdgdTAHL1PxUXnfbLBw 提取码：0cpo；解压最新版本的zip，该配置文件存放在 ExecServer 安装包下的 plugins/jobtypes/linkis 目录下，主要是设置 jobtype 所需的 lib 所在位置
 
     ```
     #将该值修改为 ExecServer 安装包目录下的 /plugins/jobtypes/linkis/extlib
@@ -241,13 +241,15 @@ sh ${DSS_HOME}bin/appconn-install.sh
 
 ## 参考
 
+[wedatasphere](https://fintech.webank.com/en/wedatasphere/)
+
+[DataSphere Studio v0.8 使用教程](https://www.bookstack.cn/books/DataSphereStudio-0.8-zh)
+
 [Linkis1.0.2 安装及使用指南](https://www.jianshu.com/p/d0e8b605c4ce#31-%E6%B6%89%E5%8F%8A%E7%BB%84%E4%BB%B6%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E)
 
 [Linkis1.0常见问题和解决办法](https://docs.qq.com/doc/DWlN4emlJeEJxWlR0)
 
 [DataSphere 常见问题和解决办法](https://docs.qq.com/doc/DSGZhdnpMV3lTUUxq)
-
-
 
 
 
