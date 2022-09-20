@@ -20,4 +20,6 @@ docker-compose -f docker-compose.yml up -d
 
 ## 参考
 
+[官方中文文档](http://www.apache-druid.cn/)
+
 https://groups.google.com/g/druid-user/c/ckMRTGo3dZk
