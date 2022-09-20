@@ -1,6 +1,45 @@
 # Keycloak 入门
 
+## 主要功能
+
+参考自 [spring-boot-keycloak](https://github.com/PhenJuly/spring-boot-keycloak)
+
+- 单一登录（SSO）
+
+  –用户通过在Keycloak中输入其凭据（通常为用户名和密码，但也可以使用其他方案）来进行身份验证，并且使用OpenId Connect协议交换有关用户身份和凭据的信息
+
+  - 可自定义的主题为面向用户的页面
+  - 不需要编写代码就能够登录Social Broker. Enable Google, Facebook, Yahoo, Twitter
+
+- **一次注销** –注销一个应用程序将导致注销所有集成系统
+
+- 多因素身份验证：
+
+  - 使用多种渠道登录，例如用户/密码+一次性密码，邮箱，手机号码等
+  - **支持几种内置的用户身份验证方案，并允许定义自己的方案**
+  - **用户联合** –可以同步来自多个来源的用户身份，如自定义一个
+  - **身份提供者**（三方登录） –可以使用标准协议在许多可配置的来源之一中对用户进行身份验证，如GitHub，微信授权等
+
+- 灵活的认证和授权机制
+
+- 实现了多种标准协议：OAuth 2，OIDC 1.0，SAML 2.0， Docker Auth
+
+- 开箱即用，提供了基于UI，Restful接口以及Command Line的配置方式
+
+
+
 ## 概念
+
+参考自 [spring-boot-keycloak](https://github.com/PhenJuly/spring-boot-keycloak)
+
+- Realm : 领域，领域管理着一批用户、角色、应用程序等，一个用户只能属于且能登陆到一个域，域之间是互相独立的，域只能管理在它下面的用户。
+- Clients：这里的Clients指的的是被keycloak保护的应用，比如说SSO中，的一个server，一个用户来访问这个server，如果请求中没有认证信息，将被redirect到keycloak，登录成功后再返回原server。
+- Roles：对用户的权限管理，添加角色
+- Users：就不用多说了，用户管理系统嘛
+- Identity-Provider：提供了三方登录的方式，或是其他可以提供OICD等协议的用户系统
+- User Federation：提供对接遗留系统的接口(个人理解是提供外部用户存储与keycloak用户存储结构的映射)
+- Thems：keycloak提供了一组的用户登录界面，管理员界面注册，同时也支持自定义该界面的（支持自定义UI，即样式）
+- client adapters：适配器，用于适配不同的语言，不同环境下整合keycloak
 
 ### Clients
 
@@ -15,7 +54,11 @@ public：适用于客户端应用，且需要浏览器登录的场景。典型�
 
 bearer-only：适用于服务端应用，不需要浏览器登录，只允许使用bearer token请求的场景。典型的使用场景就是restful api。
 
+### 
+
 ## 配置
+
+### 文件配置
 
 配置 MySQL 数据源：
 
@@ -24,7 +67,7 @@ SELECT SCHEMA_NAME 'database', DEFAULT_CHARACTER_SET_NAME 'charset', DEFAULT_COL
 ALTER DATABASE keycloak CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 ```
 
-
+需要指定数据库驱动
 
 ```xml
  <datasources>
@@ -53,6 +96,27 @@ ALTER DATABASE keycloak CHARACTER SET utf8 COLLATE utf8_unicode_ci;
     <socket-binding name="http" port="${jboss.http.port:58089}"/>
 </socket-binding-group>
 ```
+
+### client 配置
+
+以下截图都是在这个配置下完成的
+
+```
+{
+  "realm": "neom-superaccountmgr",
+  "auth-server-url": "http://172.15.0.26:58099/auth/",
+  "ssl-required": "external",
+  "resource": "neom-superaccountmgr001",
+  "credentials": {
+    "secret": "EZEoDfb0fXfBwLf5sYY06IjgBfkppyuG"
+  },
+  "confidential-port": 0
+}
+```
+
+配置
+
+![image-20220920152426751](https://tva1.sinaimg.cn/large/e6c9d24egy1h6d3mmb7esj21ek0u0dj6.jpg)
 
 ## 使用
 
@@ -102,7 +166,6 @@ OR
 
 ```
 sh bin/add-user-keycloak.sh -u admin
-
 ```
 
 ### 启动
@@ -119,9 +182,13 @@ https://www.baeldung.com/jboss-start-stop
 
 http://www.mastertheboss.com/jbossas/jboss-configuration/how-to-start-stop-and-restart-wildfly/
 
+## 集群部署
+
 
 
 ## 参考
+
+### 部署
 
 [OpenID Connect Basic Client Implementer's Guide 1.0](https://openid.net/specs/openid-connect-basic-1_0.html)
 
@@ -137,7 +204,7 @@ http://www.mastertheboss.com/jbossas/jboss-configuration/how-to-start-stop-and-r
 
 [能看懂的keycloak使用文档](https://keycloak.redhtc.com/)
 
-
+### 配置
 
 [字符的问题[keycloak 9.0.2] mysql Error: Row size too large #](https://github.com/codecentric/helm-charts/issues/213)
 
@@ -152,5 +219,9 @@ http://www.mastertheboss.com/jbossas/jboss-configuration/how-to-start-stop-and-r
 https://github.com/thomasdarimont/spring-boot-admin-keycloak-example/blob/master/admin-service/src/main/java/demo/admin/keycloak/KeycloakConfig.java
 
 [PKCE Verification in Authorization Code Grant](https://www.appsdeveloperblog.com/pkce-verification-in-authorization-code-grant/)
+
+### 集群
+
+[keycloak集群化的思考](https://www.cnblogs.com/flydean/p/14273056.html)
 
 [玩转keycloak集群部署-协议JDBC_PING](https://jishuin.proginn.com/p/763bfbd70c95)

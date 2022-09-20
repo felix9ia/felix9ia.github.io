@@ -156,7 +156,27 @@ Pay 简单说是一种“支付工具”，是指购买普通商品等。
 
 [支付回调和查单实现指引](https://pay.weixin.qq.com/wiki/doc/apiv3_partner/Practices/chapter1_1_1.shtml) 以及 [查询订单API](https://pay.weixin.qq.com/wiki/doc/apiv3_partner/apis/chapter4_1_2.shtml)
 
+## 账单查询
+
+参考阿里的 [账户流水收支明细查询接口](https://help.aliyun.com/document_detail/118472.html)
+
+| 名称                 | 类型    | 是否必选 | 示例值                   | 描述                                                         |
+| :------------------- | :------ | :------- | :----------------------- | :----------------------------------------------------------- |
+| Action               | String  | 是       | QueryAccountTransactions | 系统规定参数。取值：**QueryAccountTransactions**。           |
+| TransactionNumber    | String  | 否       | 133314076                | 交易编号。                                                   |
+| RecordID             | String  | 否       | 20200302                 | 订单/账单号。                                                |
+| TransactionChannelSN | String  | 否       | 12342134                 | 交易渠道流水号。                                             |
+| CreateTimeStart      | String  | 否       | 2020-03-05T01:46:09Z     | 创建时间段起，格式例：2018-01-01T00:00:00Z。                 |
+| CreateTimeEnd        | String  | 否       | 2020-03-06T01:55:00Z     | 创建时间段止，默认查询时间往前一个月。格式例：2018-01-01T00:00:00Z。 |
+| PageNum              | Integer | 否       | 1                        | 页码。                                                       |
+| PageSize             | Integer | 否       | 10                       | 每页显示条数。                                               |
+| TransactionType      | String  | 否       | Payment                  | 交易类型。传入以下交易类型，查询返回对应类型结果，不存在时结果为空。不传默认返回所有类型。充值：Payment。提现：Withdraw。退款：Refund。消费：Consumption。转账：Transfer。调账：Adjust。 |
+| TransactionFlow      | String  | 否       | Income                   | 收支类型。传入以下收支类型，查询返回对应类型结果，不存在时结果为空。不传默认返回所有类型。收入：Income。支出：Expense。 |
+| TransactionChannel   | String  | 否       | AccountBalance           | 交易渠道。传入以下交易渠道类型，查询返回对应类型结果，不存在时结果为空。不传默认返回所有类型。用户余额：AccountBalance。银行转账： BankTransfer。支付宝：Alipay。支付宝花呗：AntCreditPay。线下汇款：OfflineRemittance。信控额度退款：RegularBankCreditRefund。信用卡：CreditCard。网商银行信任付：MyBankCredit。华夏银行分期付：HuaxiaBankCInstallment。苹果支付：ApplePay |
+
 ## **参考**
+
+
 
 [为 Apple Pay 做好规划](https://developer.apple.com/cn/apple-pay/planning/)
 
