@@ -182,6 +182,17 @@ https://www.baeldung.com/jboss-start-stop
 
 http://www.mastertheboss.com/jbossas/jboss-configuration/how-to-start-stop-and-restart-wildfly/
 
+## Rest   接口
+
+### 获取session
+
+参考自[Keycloak user's active session information](https://stackoverflow.com/questions/72830184/keycloak-users-active-session-information)
+
+```
+```
+
+
+
 ## 集群部署
 
 
