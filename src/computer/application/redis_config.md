@@ -18,10 +18,14 @@
 
 
 
+## RedisTemplate 反序列化的问题
 
+反序列化的过程中会模糊掉泛型。
 
 
 
 ## 参考
 
 [Redis之minIdle参数讲解](https://www.jianshu.com/p/dd4a5bb52f49)
+
+[小家Spring Redis序列化、RedisTemplate序列化方式大解读，介绍Genericjackson2jsonredisserializer序列化器的坑](https://blog.51cto.com/u_3631118/3121370)
