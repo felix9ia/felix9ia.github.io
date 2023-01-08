@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/computer/application/redis_config.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1673169838696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1673169999504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,7 +25,5 @@\n \n \n ## 参考\n \n-[Redis之minIdle参数讲解](https://www.jianshu.com/p/dd4a5bb52f49)\n-\n-[小家Spring Redis序列化、RedisTemplate序列化方式大解读，介绍Genericjackson2jsonredisserializer序列化器的坑](https://blog.51cto.com/u_3631118/3121370)\n+[Redis之minIdle参数讲解](https://www.jianshu.com/p/dd4a5bb52f49)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673170015410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,5 +25,7 @@\n \n \n ## 参考\n \n-[Redis之minIdle参数讲解](https://www.jianshu.com/p/dd4a5bb52f49)\n\\ No newline at end of file\n+[Redis之minIdle参数讲解](https://www.jianshu.com/p/dd4a5bb52f49)\n+\n+[小家Spring Redis序列化、RedisTemplate序列化方式大解读，介绍Genericjackson2jsonredisserializer序列化器的坑](https://blog.51cto.com/u_3631118/3121370)\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1673169838696,
+            "name": "Commit-0",
+            "content": "### Redis 配置解释\n\n如果连接数超过了minIdle，那么继续建立连接，但是不超时maxIdle\n\n### maxActive\n\n连接池的最大数据库连接数。设为0表示无限制。\n\n一般把maxActive设置成可能的并发量就行了\n\n### maxIdle\n\n\n\n### minIdle\n\n至少需要保持的空闲连接数\n\n\n\n## RedisTemplate 反序列化的问题\n\n反序列化的过程中会模糊掉泛型。\n\n\n\n## 参考\n\n[Redis之minIdle参数讲解](https://www.jianshu.com/p/dd4a5bb52f49)\n\n[小家Spring Redis序列化、RedisTemplate序列化方式大解读，介绍Genericjackson2jsonredisserializer序列化器的坑](https://blog.51cto.com/u_3631118/3121370)\n"
+        }
+    ]
+}
