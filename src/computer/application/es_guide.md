@@ -1,5 +1,13 @@
 # ES
 
+记录
+
+## Java
+
+可以参考 [Elasticsearch Java 手册](https://es.quanke.name/aggregations/metrics-aggregations.html)
+
+## 聚合
+
 ```
 interval(时间间隔)的可用表达式：
 
@@ -34,7 +42,18 @@ interval: 容易造成歧义，后续将会被弃用，此处不解释；
 
 
 
+如何创建索引模板
 
+```
+boolean putTemplate(Class<T> entityClass, String templateName, String... indexPatterns) {
+    IndexOperations ops = elasticsearchRestTemplate.indexOps(entityClass);
+    PutTemplateRequest request = PutTemplateRequest.builder(templateName, indexPatterns)
+            .withSettings(Document.from(ops.createSettings()))
+            .withMappings(Document.from(ops.createMapping()))
+            .build();
+    return ops.putTemplate(request);
+}
+```
 
 ## 参考
 
@@ -59,4 +78,8 @@ https://github.com/NLPchina/elasticsearch-sql
 [ES aggregation详解](https://www.cnblogs.com/candlia/p/11920034.html)
 
 [ES系列之原来ES的聚合统计不准确啊](https://segmentfault.com/a/1190000022025890)
+
+[ElasticsearchRestTemplate 的一些坑](https://h2cone.github.io/post/2021/07/26/elasticsearch_rest_template_pitfall/)
+
+[Elasticsearch(5) --- 基本命令(集群相关命令、索引CRUD命令、文档CRUD命令)](https://www.cnblogs.com/qdhxhz/p/11461174.html)
 
