@@ -1,0 +1,18 @@
+{
+    "sourceFile": "deploy.sh",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1677204680405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1677204680405,
+            "name": "Commit-0",
+            "content": "#!/usr/bin/env sh\n\n# 确保脚本抛出遇到的错误\nset -e\n\n# 生成静态文件\n#npm run docs:build\nnpm run build\n# 支持微信可访问\ncp ./MP_verify_9RvbxRWFvPhDUHV6.txt ./dist\n# 进入生成的文件夹\ncd ./dist\n\n# 如果是发布到自定义域名\necho 'blog.medalwall.top' > CNAME\n\ngit init\ngit add -A\ngit commit -m 'deploy'\n\n\n# 如果发布到 https://<USERNAME>.github.io/<REPO>\ngit push -f https://github.com/felix9ia/felix9ia.github.io.git  master:gh-pages\n\ncd -"
+        }
+    ]
+}

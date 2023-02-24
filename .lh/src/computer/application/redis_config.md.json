@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1673169838696,
@@ -16,6 +16,10 @@
                 {
                     "date": 1673170015410,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,5 +25,7 @@\n \n \n ## 参考\n \n-[Redis之minIdle参数讲解](https://www.jianshu.com/p/dd4a5bb52f49)\n\\ No newline at end of file\n+[Redis之minIdle参数讲解](https://www.jianshu.com/p/dd4a5bb52f49)\n+\n+[小家Spring Redis序列化、RedisTemplate序列化方式大解读，介绍Genericjackson2jsonredisserializer序列化器的坑](https://blog.51cto.com/u_3631118/3121370)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677205008211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,5 +27,5 @@\n ## 参考\n \n [Redis之minIdle参数讲解](https://www.jianshu.com/p/dd4a5bb52f49)\n \n-[小家Spring Redis序列化、RedisTemplate序列化方式大解读，介绍Genericjackson2jsonredisserializer序列化器的坑](https://blog.51cto.com/u_3631118/3121370)\n\\ No newline at end of file\n+[小家Spring Redis序列化、RedisTemplate序列化方式大解读，介绍Genericjackson2jsonredisserializer序列化器的坑](https://blog.51cto.com/u_3631118/3121370)\n"
                 }
             ],
             "date": 1673169838696,
