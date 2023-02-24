@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1677204680405,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1677205237630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,7 @@\n git commit -m 'deploy'\n \n \n # 如果发布到 https://<USERNAME>.github.io/<REPO>\n-git push -f https://github.com/felix9ia/felix9ia.github.io.git  master:gh-pages\n+git push -f https://github.com/felix9ia/felix9ia.github.io.git  main:gh-pages\n \n cd -\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1677204680405,
