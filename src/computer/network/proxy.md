@@ -1,3 +1,10 @@
+---
+time: 2021-7-28
+
+
+
+
+---
 # Mac OSX终端走shadowsocks代理
 
 参考自：[Mac OSX终端走shadowsocks代理](https://github.com/mrdulin/blog/issues/18)

@@ -1,3 +1,9 @@
+---
+time: 2022-9-20
+
+
+
+---
 # 质量实时数仓从 Elasticsearch 到 ClickHouse
 
 Elasticsearch 其实不太满足我们 OLAP 的业务场景了，所以想趁着重构的机会，将存储引擎替换掉 ，目前备选有 Druid 和 ClickHouse，但更倾向于 ClickHouse，目前正在实际使用对比评估中。

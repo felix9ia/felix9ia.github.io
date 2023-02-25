@@ -1,3 +1,10 @@
+---
+time: 2022-8-4
+
+
+
+
+---
 # Logstash
 
 安装请查看官网[install - logstash](https://www.elastic.co/guide/en/logstash/current/installing-logstash.html)

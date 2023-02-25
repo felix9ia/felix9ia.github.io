@@ -1,3 +1,10 @@
+---
+time: 2022-8-4
+
+
+
+
+---
 # OLAP 入门
 
 OLAP（On-line Analytical Processing，联机分析处理）是在基于数据仓库多维模型的基础上实现的面向分析的各类操作的集合。与传统的OLTP（On-line Transaction Processing，联机事务处理）有区别。
