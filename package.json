@@ -19,8 +19,5 @@
     "vuepress": "^1.8.2",
     "vuepress-plugin-auto-sidebar": "^1.5.0",
     "vuepress-theme-hope": "1.9.3"
-  },
-  "devDependencies": {
-    "vuepress-plugin-add-this": "^1.12.1"
   }
 }

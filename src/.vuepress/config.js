@@ -11,7 +11,6 @@ module.exports = config({
     ["@vuepress/last-updated", false],
     ["vuepress-plugin-auto-sidebar", {}],
     "@mr-hope/last-update",
-    ["add-this", { pubid: "ra-605e78d410c971a4" }]
   ],
   // remove this if you are not using Vue and React in "markdownEnhance: code demo"
   head: [
@@ -97,7 +96,7 @@ module.exports = config({
 
     comment: {
       type: "valine",
-      appId: "HJkxRfRvuGxbNSExpCIrM6Vv-gzGzoHsz",
+      appId: "HJkxRfRvuGxbN·SExpCIrM6Vv-gzGzoHsz",
       appKey: "49rygaa2PM8bXhP7CchWDyoq",
     },
 
