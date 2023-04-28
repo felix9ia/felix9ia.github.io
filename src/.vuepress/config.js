@@ -12,6 +12,13 @@ module.exports = config({
     ["vuepress-plugin-auto-sidebar", {}],
     "@mr-hope/last-update",
   ],
+  configureWebpack: {
+    resolve: {
+      alias: {
+        "@img": '/public/img'
+      }
+    },
+  },
   // remove this if you are not using Vue and React in "markdownEnhance: code demo"
   head: [
     [
@@ -86,6 +93,7 @@ module.exports = config({
       links: {
         Zhihu: "https://www.zhihu.com/people/jia-peng-fei-81",
         Github: "https://github.com/felix9ia",
+        BiliBili: "https://space.bilibili.com/130832968"
       },
     },
 
