@@ -20,16 +20,16 @@ project:
 
   - type: book
     name: 阅读
-    desc: 度过的书,走过的路
+    desc: 读好书，览人生
     link: /reading
 
   - type: article
     name: 想法
-    desc: 胡思乱想
+    desc: 边成长，边思考
     link: /opinions
 
-footer: 自定义你的页脚文字
+footer: felix9ia
 ---
 
-相关配置文档请见 [博客主页](https://vuepress-theme-hope.github.io/zh/guide/layout/blog/)
+[Github 主页](https://github.com/felix9ia)
 

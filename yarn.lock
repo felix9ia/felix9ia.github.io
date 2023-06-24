@@ -1201,20 +1201,6 @@
     vuepress-plugin-md-enhance "1.9.3"
     vuepress-plugin-photo-swipe "1.9.3"
 
-"@mr-hope/vuepress-types@1.12.1":
-  version "1.12.1"
-  resolved "https://registry.npm.taobao.org/@mr-hope/vuepress-types/download/@mr-hope/vuepress-types-1.12.1.tgz#e6f6f8dd98f4101131e08b38358623814666b3f0"
-  integrity sha1-5vb43Zj0EBEx4Is4NYYjgUZms/A=
-  dependencies:
-    "@types/express" "^4.17.11"
-    "@types/markdown-it" "^12.0.1"
-    "@types/markdown-it-anchor" "^7.0.0"
-    "@types/webpack-dev-server" "^3.11.2"
-    cac "^6.7.2"
-    vue "^2.6.12"
-    vue-loader "^15.9.6"
-    webpack-chain "^6.5.1"
-
 "@mr-hope/vuepress-types@1.9.3":
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/@mr-hope/vuepress-types/-/vuepress-types-1.9.3.tgz#851fcae6bc4a623572774362d6060d67f921f070"
@@ -1425,7 +1411,7 @@
     "@types/http-proxy" "*"
     "@types/node" "*"
 
-"@types/http-proxy@*", "@types/http-proxy@^1.17.4":
+"@types/http-proxy@*":
   version "1.17.5"
   resolved "https://registry.yarnpkg.com/@types/http-proxy/-/http-proxy-1.17.5.tgz#c203c5e6e9dc6820d27a40eb1e511c70a220423d"
   integrity sha512-GNkDE7bTv6Sf8JbV2GksknKOsk7OznNYHSdrtvPJXO0qJ9odZig6IZKUi5RFGi6d1bf6dgIAe4uXi3DBc7069Q==
@@ -1575,11 +1561,6 @@
   resolved "https://registry.yarnpkg.com/@types/tapable/-/tapable-1.0.6.tgz#a9ca4b70a18b270ccb2bc0aaafefd1d486b7ea74"
   integrity sha512-W+bw9ds02rAQaMvaLYxAbJ6cvguW/iJXNT6lTssS1ps6QdrMKttqEAMEG/b5CR8TZl3/L7/lH0ZV5nNR1LXikA==
 
-"@types/tapable@^1":
-  version "1.0.7"
-  resolved "https://registry.npm.taobao.org/@types/tapable/download/@types/tapable-1.0.7.tgz#545158342f949e8fd3bfd813224971ecddc3fac4"
-  integrity sha1-VFFYNC+Uno/Tv9gTIklx7N3D+sQ=
-
 "@types/uglify-js@*":
   version "3.11.1"
   resolved "https://registry.yarnpkg.com/@types/uglify-js/-/uglify-js-3.11.1.tgz#97ff30e61a0aa6876c270b5f538737e2d6ab8ceb"
@@ -1598,17 +1579,6 @@
     "@types/serve-static" "*"
     "@types/webpack" "*"
 
-"@types/webpack-dev-server@^3.11.2":
-  version "3.11.3"
-  resolved "https://registry.npm.taobao.org/@types/webpack-dev-server/download/@types/webpack-dev-server-3.11.3.tgz#237e26d87651cf95490dcd356f568c8c84016177"
-  integrity sha1-I34m2HZRz5VJDc01b1aMjIQBYXc=
-  dependencies:
-    "@types/connect-history-api-fallback" "*"
-    "@types/express" "*"
-    "@types/serve-static" "*"
-    "@types/webpack" "^4"
-    http-proxy-middleware "^1.0.0"
-
 "@types/webpack-sources@*":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@types/webpack-sources/-/webpack-sources-2.1.0.tgz#8882b0bd62d1e0ce62f183d0d01b72e6e82e8c10"
@@ -1626,18 +1596,6 @@
     "@types/anymatch" "*"
     "@types/node" "*"
     "@types/tapable" "*"
-    "@types/uglify-js" "*"
-    "@types/webpack-sources" "*"
-    source-map "^0.6.0"
-
-"@types/webpack@^4":
-  version "4.41.27"
-  resolved "https://registry.npm.taobao.org/@types/webpack/download/@types/webpack-4.41.27.tgz#f47da488c8037e7f1b2dbf2714fbbacb61ec0ffc"
-  integrity sha1-9H2kiMgDfn8bLb8nFPu6y2HsD/w=
-  dependencies:
-    "@types/anymatch" "*"
-    "@types/node" "*"
-    "@types/tapable" "^1"
     "@types/uglify-js" "*"
     "@types/webpack-sources" "*"
     source-map "^0.6.0"
@@ -2831,11 +2789,6 @@ cac@^6.5.6, cac@^6.7.1:
   version "6.7.1"
   resolved "https://registry.yarnpkg.com/cac/-/cac-6.7.1.tgz#0609d28a31d887746de4b66a15e3914f106f880c"
   integrity sha512-LfGt47+ugCY65W4yUEyxnZKd/tJSBJD/gUAxQGiQjH7yqdhbaX2XN0Rli4+0W0DJiDONmYeh0TlJxMtXGZspIg==
-
-cac@^6.7.2:
-  version "6.7.2"
-  resolved "https://registry.npm.taobao.org/cac/download/cac-6.7.2.tgz#e7f0d21f4776c46c7d0de7976e56fa5562e17597"
-  integrity sha1-5/DSH0d2xGx9DeeXblb6VWLhdZc=
 
 cacache@^12.0.2, cacache@^12.0.3:
   version "12.0.4"
@@ -5095,18 +5048,7 @@ http-proxy-middleware@0.19.1:
     lodash "^4.17.11"
     micromatch "^3.1.10"
 
-http-proxy-middleware@^1.0.0:
-  version "1.0.6"
-  resolved "https://registry.npm.taobao.org/http-proxy-middleware/download/http-proxy-middleware-1.0.6.tgz#0618557722f450375d3796d701a8ac5407b3b94e"
-  integrity sha1-BhhVdyL0UDddN5bXAaisVAezuU4=
-  dependencies:
-    "@types/http-proxy" "^1.17.4"
-    http-proxy "^1.18.1"
-    is-glob "^4.0.1"
-    lodash "^4.17.20"
-    micromatch "^4.0.2"
-
-http-proxy@^1.17.0, http-proxy@^1.18.1:
+http-proxy@^1.17.0:
   version "1.18.1"
   resolved "https://registry.yarnpkg.com/http-proxy/-/http-proxy-1.18.1.tgz#401541f0534884bbf95260334e72f88ee3976549"
   integrity sha512-7mz/721AbnJwIVbnaSv1Cz3Am0ZLT/UBwkC92VlxhXv/k/BBQfM2fXElQNC27BVGr0uwUpplYPQM9LnaBMR5NQ==
@@ -6265,7 +6207,7 @@ micromatch@^3.1.10, micromatch@^3.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
 
-micromatch@^4.0.0, micromatch@^4.0.2:
+micromatch@^4.0.0:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-4.0.2.tgz#4fcb0999bf9fbc2fcbdd212f6d629b9a56c39259"
   integrity sha512-y7FpHSbMUMoyPbYUSzO6PaZ6FyRnQOpHuKwbo1G+Knck95XVU4QAiKdGEnj5wwoS7PlOgthX/09u5iFJ+aYf5Q==
@@ -9281,13 +9223,6 @@ vuepress-plugin-add-this@1.9.3:
   integrity sha512-K1guOePNAjxdfBV4TbyCshnB4xaQHRcU3bfjp/UAmJv+NekMr88wACMDGblxu5NsS/XhqD3NsKd2oNSH2MpU1g==
   dependencies:
     "@mr-hope/vuepress-types" "1.9.3"
-
-vuepress-plugin-add-this@^1.12.1:
-  version "1.12.1"
-  resolved "https://registry.npm.taobao.org/vuepress-plugin-add-this/download/vuepress-plugin-add-this-1.12.1.tgz#6dc8e085fb708aad6d1600e579781ae4dfd3a894"
-  integrity sha1-bcjghftwiq1tFgDleXga5N/TqJQ=
-  dependencies:
-    "@mr-hope/vuepress-types" "1.12.1"
 
 vuepress-plugin-auto-sidebar@^1.5.0:
   version "1.5.0"
