@@ -12,7 +12,7 @@ cp ./MP_verify_9RvbxRWFvPhDUHV6.txt ./dist
 cd ./dist
 
 # 如果是发布到自定义域名
-echo 'blog.medalwall.top' > CNAME
+# echo 'blog.medalwall.top' > CNAME
 
 git init
 git add -A

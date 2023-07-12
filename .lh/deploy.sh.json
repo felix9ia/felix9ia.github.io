@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1677204680405,
@@ -24,6 +24,10 @@
                 {
                     "date": 1689147176084,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,13 +13,13 @@\n \n # 如果是发布到自定义域名\n echo 'blog.medalwall.top' > CNAME\n \n-git inith\n+git init\n git add -A\n git commit -m 'deploy'\n \n \n # 如果发布到 https://<USERNAME>.github.io/<REPO>\n-git push -f https://github.com/felix9ia/felix9ia.github.io.git  master:gh-pages\n+git push -f https://github.com/felix9ia/felix9ia.github.io.git  main:gh-pages\n \n cd -\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689147406659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,15 +11,15 @@\n # 进入生成的文件夹\n cd ./dist\n \n # 如果是发布到自定义域名\n-echo 'blog.medalwall.top' > CNAME\n+# echo 'blog.medalwall.top' > CNAME\n \n git init\n git add -A\n git commit -m 'deploy'\n \n \n # 如果发布到 https://<USERNAME>.github.io/<REPO>\n-git push -f https://github.com/felix9ia/felix9ia.github.io.git  main:gh-pages\n+git push -f https://github.com/felix9ia/felix9ia.github.io.git  master:gh-pages\n \n cd -\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1677204680405,
