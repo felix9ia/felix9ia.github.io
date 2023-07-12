@@ -21,8 +21,23 @@
 
   运行 `npm run build` 或者 `yarn run build`
 
+QA
+Q: 为什么 `sh deploy.sh` 报错 `error: src refspec main does not match any`
 
+```
 
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint:   git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint:   git branch -m <name>
+```
 
+本地默认的 是 master，远程是用的 main ，所以冲突了，把线上改成 master
 
 

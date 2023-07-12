@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1677204680405,
@@ -12,6 +12,18 @@
                 {
                     "date": 1677205237630,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,7 @@\n git commit -m 'deploy'\n \n \n # 如果发布到 https://<USERNAME>.github.io/<REPO>\n-git push -f https://github.com/felix9ia/felix9ia.github.io.git  master:gh-pages\n+git push -f https://github.com/felix9ia/felix9ia.github.io.git  main:gh-pages\n \n cd -\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689147161109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,7 @@\n git commit -m 'deploy'\n \n \n # 如果发布到 https://<USERNAME>.github.io/<REPO>\n-git push -f https://github.com/felix9ia/felix9ia.github.io.git  main:gh-pages\n+git push -f https://github.com/felix9ia/felix9ia.github.io.git  master:gh-pages\n \n cd -\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689147168708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \n # 如果是发布到自定义域名\n echo 'blog.medalwall.top' > CNAME\n \n-git init\n+git inith\n git add -A\n git commit -m 'deploy'\n \n \n"
+                },
+                {
+                    "date": 1689147176084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,13 +13,13 @@\n \n # 如果是发布到自定义域名\n echo 'blog.medalwall.top' > CNAME\n \n-git inith\n+git init\n git add -A\n git commit -m 'deploy'\n \n \n # 如果发布到 https://<USERNAME>.github.io/<REPO>\n-git push -f https://github.com/felix9ia/felix9ia.github.io.git  master:gh-pages\n+git push -f https://github.com/felix9ia/felix9ia.github.io.git  main:gh-pages\n \n cd -\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1677204680405,
