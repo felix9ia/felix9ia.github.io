@@ -60,7 +60,7 @@ Pay 简单说是一种“支付工具”，是指购买普通商品等。
   -  缺点：
 
   - 流程变长，取消支付带来的一些重复支付的异常
-  - ![](https://tva1.sinaimg.cn/large/e6c9d24ely1h3wzoa0jnvj20kz0jowfb.jpg)
+  - ![](https://tva2.sinaimg.cn/large/e6c9d24ely1h3wzoa0jnvj20kz0jowfb.jpg)
 
 #### 支付供应商的 SDK 接入**（推荐）**
 
