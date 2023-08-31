@@ -2,11 +2,9 @@
 
 
 
-
-
 ## UML 类图
 
-
+![](https://cdn.jsdelivr.net/gh/felix9ia/blog_img@master/img/202308311448801.png)
 
 ### 关系展示 1
 
@@ -22,6 +20,22 @@
 
 ![](https://cdn.jsdelivr.net/gh/felix9ia/blog_img@master/img/whiteboard_exported_image.png)
 
+## 思维导图
+
+
+
+## 概念图
+
+![](https://cdn.jsdelivr.net/gh/felix9ia/blog_img@master/img/202308171605217.png)
+
+## 认知地图
+
+![](https://cdn.jsdelivr.net/gh/felix9ia/blog_img@master/img/202308171604366.png)
+
+
+
+
+
 ## 参考
 
 [开发笔记-UML 类图](https://pengfeixc.com/blogs/developer-handbook/uml)
@@ -33,3 +47,5 @@
 [各种优质的设计图](https://circle.visual-paradigm.com/diagram-examples/)
 
 [什么是实体关系图（ERD）？](https://www.visual-paradigm.com/cn/guide/data-modeling/what-is-entity-relationship-diagram/)
+
+[你还分不清认知地图、思维导图、概念图？](https://www.woshipm.com/user-research/2603949.html)
